@@ -1,0 +1,917 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "" : {
+
+    },
+    "%@" : {
+
+    },
+    "%lld" : {
+
+    },
+    "%lld day" : {
+      "localizations" : {
+        "en" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld day"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld days"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "%lld glass" : {
+      "localizations" : {
+        "en" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld glass"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld glasses"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "%lld hour" : {
+
+    },
+    "%lld kcal / %@ steps" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$lld kcal / %2$@ steps"
+          }
+        }
+      }
+    },
+    "%lld minute" : {
+
+    },
+    "%lld month" : {
+      "localizations" : {
+        "en" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld month"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld months"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "%lld year" : {
+      "localizations" : {
+        "en" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld year"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld years"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "%lldkcal / %lldmin" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$lldkcal / %2$lldmin"
+          }
+        }
+      }
+    },
+    "%lldmin" : {
+
+    },
+    "• Once you confirm the purchase, your payment will be charged to your iTunes Account." : {
+
+    },
+    "• Subscription may be managed by the user and auto-renewal may be turned off by going to the user's Account Settings after purchase." : {
+
+    },
+    "• The price of weekly subscription is %@ and yearly subscription is %@ (%@ per week)." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "• The price of weekly subscription is %1$@ and yearly subscription is %2$@ (%3$@ per week)."
+          }
+        }
+      }
+    },
+    "• The price of weekly subscription is %@, yearly subscription is %@ (%@ per week) and monthly subscription is %@." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "• The price of weekly subscription is %1$@, yearly subscription is %2$@ (%3$@ per week) and monthly subscription is %4$@."
+          }
+        }
+      }
+    },
+    "• Your account will be charged for renewal within 24 hours prior to the end of the current period." : {
+
+    },
+    "• Your subscription automatically renews unless auto-renew is turned off at least 24 hours before the end of the current period." : {
+
+    },
+    "A bit too low. Aiming for a slightly higher weight will help boost your daily energy." : {
+
+    },
+    "Achieve more." : {
+
+    },
+    "Actity Level" : {
+
+    },
+    "Activity" : {
+
+    },
+    "Activity name" : {
+
+    },
+    "Add" : {
+
+    },
+    "AI Chef" : {
+
+    },
+    "AI suggestions" : {
+
+    },
+    "An error occurred" : {
+
+    },
+    "Analyze" : {
+
+    },
+    "Analyzing your goals" : {
+
+    },
+    "Apply" : {
+
+    },
+    "Apply Change" : {
+
+    },
+    "Auto-renew. Cancel anytime." : {
+
+    },
+    "Based on WHO BMI guidelines" : {
+
+    },
+    "Bento" : {
+
+    },
+    "Bento Box" : {
+
+    },
+    "Best Offer" : {
+
+    },
+    "Body Mass Index is a standard measurement of body fat based on height and weight, calculated according to WHO guidelines." : {
+
+    },
+    "Bowl" : {
+
+    },
+    "Breakfast" : {
+
+    },
+    "Building your macro plan" : {
+
+    },
+    "Burn calories" : {
+
+    },
+    "Calculating calories..." : {
+
+    },
+    "Calculating daily calories" : {
+
+    },
+    "Calculating macros" : {
+
+    },
+    "Calories" : {
+
+    },
+    "Calories / Serving" : {
+
+    },
+    "Camera Access" : {
+
+    },
+    "Cancel" : {
+
+    },
+    "Capture the full label" : {
+
+    },
+    "Continue" : {
+
+    },
+    "Cook your way to your goals!" : {
+
+    },
+    "Couldn't Recognize Food" : {
+
+    },
+    "Creating your personalized plan..." : {
+
+    },
+    "Critical High" : {
+
+    },
+    "Critical Low" : {
+
+    },
+    "Cup" : {
+
+    },
+    "Current" : {
+
+    },
+    "Current Weight" : {
+
+    },
+    "Custom" : {
+
+    },
+    "Daily Insight Check" : {
+
+    },
+    "Daily Recommendations" : {
+
+    },
+    "Daily steps" : {
+
+    },
+    "Day" : {
+
+    },
+    "Delete" : {
+
+    },
+    "Delete Activity" : {
+
+    },
+    "Delete meal?" : {
+
+    },
+    "Delete recipe?" : {
+
+    },
+    "Delete workout?" : {
+
+    },
+    "Describe your ideal meal" : {
+
+    },
+    "Describe your ideal meal (Optional)" : {
+
+    },
+    "Detail your meal to help AI analyze more accurately (Optional)" : {
+
+    },
+    "Detecting food items..." : {
+
+    },
+    "Dinner" : {
+
+    },
+    "Discard Anyway" : {
+
+    },
+    "Discard this meal?" : {
+
+    },
+    "Discover Now" : {
+
+    },
+    "Duration" : {
+
+    },
+    "Edit" : {
+
+    },
+    "Edit Meal" : {
+
+    },
+    "Ensure the entire Nutrition Facts panel is visible and clear, from serving sizes to macro details." : {
+
+    },
+    "Estimated Calories" : {
+
+    },
+    "Estimated Meal Size" : {
+
+    },
+    "Estimating calories" : {
+
+    },
+    "Exceeds your remaining daily calories." : {
+
+    },
+    "Excercise" : {
+
+    },
+    "Exercise burn" : {
+
+    },
+    "Favourites" : {
+
+    },
+    "Female" : {
+
+    },
+    "Filters" : {
+
+    },
+    "Finalizing details..." : {
+
+    },
+    "Fits You" : {
+
+    },
+    "Fits your estimated calories" : {
+
+    },
+    "Gain %@ from %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Gain %1$@ from %2$@"
+          }
+        }
+      }
+    },
+    "Gain Weight" : {
+
+    },
+    "Gathering your ingredients..." : {
+
+    },
+    "Gender" : {
+
+    },
+    "Generate" : {
+
+    },
+    "Generate Insight" : {
+
+    },
+    "Generate Recipe" : {
+
+    },
+    "Generate Review" : {
+
+    },
+    "Generating AI insights" : {
+
+    },
+    "GET STARTED" : {
+
+    },
+    "Glass size" : {
+
+    },
+    "Goal weight: %@" : {
+
+    },
+    "Goal:" : {
+
+    },
+    "Got it" : {
+
+    },
+    "Healthy Weight" : {
+
+    },
+    "Height" : {
+
+    },
+    "High" : {
+
+    },
+    "High activity" : {
+
+    },
+    "Hours" : {
+
+    },
+    "How tall are you?" : {
+
+    },
+    "How to make" : {
+
+    },
+    "If you leave now, your updated information and goals won't be saved." : {
+
+    },
+    "Ingredients" : {
+
+    },
+    "Intense daily activity or frequent workouts" : {
+
+    },
+    "Just %@/%@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Just %1$@/%2$@"
+          }
+        }
+      }
+    },
+    "Just %@/week" : {
+
+    },
+    "Label" : {
+
+    },
+    "Leave without saving?" : {
+
+    },
+    "lifetime" : {
+
+    },
+    "Lifetime" : {
+
+    },
+    "Light daily movement or occasional exercise" : {
+
+    },
+    "Lightly" : {
+
+    },
+    "Lightly activity" : {
+
+    },
+    "Log & Save" : {
+
+    },
+    "Log Exercise" : {
+
+    },
+    "Log Meal" : {
+
+    },
+    "Log More" : {
+
+    },
+    "Log Water" : {
+
+    },
+    "Log Weight" : {
+
+    },
+    "Logged Exercises" : {
+
+    },
+    "Logged Meals" : {
+
+    },
+    "Looks like you haven't added anything to your favorites yet." : {
+
+    },
+    "Lose %@ from %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Lose %1$@ from %2$@"
+          }
+        }
+      }
+    },
+    "Lose Weight" : {
+
+    },
+    "Low" : {
+
+    },
+    "Low activity" : {
+
+    },
+    "Lunch" : {
+
+    },
+    "Maintain Weight" : {
+
+    },
+    "Maintain your weight at %@" : {
+
+    },
+    "Make sure the item is in focus and try again." : {
+
+    },
+    "Male" : {
+
+    },
+    "Meal" : {
+
+    },
+    "Meal Review" : {
+
+    },
+    "Meal Size" : {
+
+    },
+    "Minutes" : {
+
+    },
+    "MinWeight" : {
+
+    },
+    "Moderate" : {
+
+    },
+    "Moderate activity" : {
+
+    },
+    "month" : {
+
+    },
+    "Monthly" : {
+
+    },
+    "More" : {
+
+    },
+    "More ideas with your ingredients" : {
+
+    },
+    "Mostly sitting with little daily movement" : {
+
+    },
+    "Name of food" : {
+
+    },
+    "Name of meal" : {
+
+    },
+    "Next" : {
+
+    },
+    "No\nActivity" : {
+
+    },
+    "No\nMeal" : {
+
+    },
+    "No Connection" : {
+
+    },
+    "No Data" : {
+
+    },
+    "No Exercises" : {
+
+    },
+    "No Favorites Yet" : {
+
+    },
+    "No ingredients added yet" : {
+
+    },
+    "No matching exercises found.\nTry searching with different keywords." : {
+
+    },
+    "No matching recipes found.\nTry searching with different keywords." : {
+
+    },
+    "No Recipes" : {
+
+    },
+    "Non-binary" : {
+
+    },
+    "Nutrition" : {
+
+    },
+    "Obese" : {
+
+    },
+    "OK" : {
+
+    },
+    "Other" : {
+
+    },
+    "Overweight" : {
+
+    },
+    "Paste" : {
+
+    },
+    "Per week" : {
+
+    },
+    "Perfect! A highly realistic and sustainable goal for your body." : {
+
+    },
+    "Personal Summary" : {
+
+    },
+    "Personalizing recommendations" : {
+
+    },
+    "Photo Tips" : {
+
+    },
+    "Plan" : {
+
+    },
+    "Plate" : {
+
+    },
+    "Please check your internet connection and try again." : {
+
+    },
+    "Popular" : {
+
+    },
+    "Position your food inside the square and capture a clear photo showing as many ingredients as possible." : {
+
+    },
+    "Privacy Policy" : {
+
+    },
+    "Processing..." : {
+
+    },
+    "Reach %@" : {
+
+    },
+    "Ready to analyze" : {
+
+    },
+    "Recalculate Plan" : {
+
+    },
+    "Recipe" : {
+
+    },
+    "Recipe Detail" : {
+
+    },
+    "Regular activity or exercise several times a week" : {
+
+    },
+    "Remaining" : {
+
+    },
+    "Remove" : {
+
+    },
+    "Reset" : {
+
+    },
+    "Restore" : {
+
+    },
+    "Retake" : {
+
+    },
+    "Retake Now" : {
+
+    },
+    "Save %@%%" : {
+
+    },
+    "Scan smarter. Reach goals faster." : {
+
+    },
+    "Search activity" : {
+
+    },
+    "Search for recipes" : {
+
+    },
+    "Searching for the best match..." : {
+
+    },
+    "Select size" : {
+
+    },
+    "Serving" : {
+
+    },
+    "Set the amount of water per glass when logging" : {
+
+    },
+    "Settings" : {
+
+    },
+    "Slightly above the healthy zone. It’s a manageable starting point to work toward later." : {
+
+    },
+    "Snack" : {
+
+    },
+    "Start My Plan" : {
+
+    },
+    "Statistics" : {
+
+    },
+    "Step %lld" : {
+
+    },
+    "Subscription Terms" : {
+
+    },
+    "Suggested Routine" : {
+
+    },
+    "System" : {
+
+    },
+    "Takeout" : {
+
+    },
+    "Takeout Box" : {
+
+    },
+    "Target BMI: %@" : {
+
+    },
+    "Tell us about you" : {
+
+    },
+    "Terms of Use" : {
+
+    },
+    "This target keeps you in a high-risk zone. We recommend setting a slightly lower goal for your health." : {
+
+    },
+    "Tip for Best Results" : {
+
+    },
+    "To reach goal" : {
+
+    },
+    "Today" : {
+
+    },
+    "Track less. " : {
+
+    },
+    "Track meals, build healthier habits, and reach your goals with AI." : {
+
+    },
+    "Tracking" : {
+
+    },
+    "Try again" : {
+
+    },
+    "Turn your available ingredients into personalized meals that fit your calorie goal." : {
+
+    },
+    "Type an ingredient..." : {
+
+    },
+    "Type your meal" : {
+
+    },
+    "Underweight" : {
+
+    },
+    "Vs Macro target" : {
+
+    },
+    "Warning: This goal poses severe health risks. We recommend setting a slightly lower goal for your health." : {
+
+    },
+    "Warning: This target is extremely low. Please consider a safer weight or consult a doctor." : {
+
+    },
+    "Watch Out For" : {
+
+    },
+    "Water" : {
+
+    },
+    "Water Intake" : {
+
+    },
+    "We couldn't generate your recipes. Please try again." : {
+
+    },
+    "We couldn't load this recipe. Please try again." : {
+
+    },
+    "week" : {
+
+    },
+    "Weekly" : {
+
+    },
+    "Weight" : {
+
+    },
+    "What's your goal?" : {
+
+    },
+    "year" : {
+
+    },
+    "Yearly" : {
+
+    },
+    "Yesterday" : {
+
+    },
+    "You won't be able to recover this recipe." : {
+
+    },
+    "You won't see this meal again." : {
+
+    },
+    "You won't see this workout again." : {
+
+    },
+    "Your activity level?" : {
+
+    },
+    "Your birth year" : {
+
+    },
+    "Your BMI: %@" : {
+
+    },
+    "Your current meal analysis hasn't been saved yet." : {
+
+    },
+    "Your current weight?" : {
+
+    },
+    "Your Goal" : {
+
+    },
+    "Your Meal" : {
+
+    },
+    "Your meal review isn't ready yet. We're analyzing the nutrition and balance of your meal to provide accurate feedback." : {
+
+    },
+    "Your Personal Plan is Ready!" : {
+
+    },
+    "Your personalized insight isn't ready yet. We're analyzing your data to deliver meaningful recommendations" : {
+
+    },
+    "Your target weight?" : {
+
+    }
+  },
+  "version" : "1.1"
+}
