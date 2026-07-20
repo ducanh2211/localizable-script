@@ -151,6 +151,29 @@ def is_untranslated_unit(string_unit):
     return string_unit.get("state") in UNTRANSLATED_STATES
 
 
+def format_variant(var_type, var_key):
+    """
+    Gộp (variation_type, variation_key) thành 1 cột "variant" cho CSV, vd.
+    "plural.one", "device.iphone". Chuỗi đơn giản (var_type == "") -> "".
+    """
+    if not var_type:
+        return ""
+    return f"{var_type}.{var_key}"
+
+
+def parse_variant(variant):
+    """
+    Chiều ngược lại của format_variant: tách cột "variant" trong CSV thành
+    (variation_type, variation_key) để merge định vị đúng path.
+    "" -> ("", "").
+    """
+    variant = (variant or "").strip()
+    if not variant:
+        return "", ""
+    var_type, _, var_key = variant.partition(".")
+    return var_type, var_key
+
+
 def get_source_value(entry, source_lang):
     """
     Lấy giá trị nguồn (source) của một entry để làm ngữ cảnh khi dịch.
@@ -219,6 +242,7 @@ def iter_rows_for_key(key, entry, source_lang, target_lang):
             "language": target_lang,
             "variation_type": var_type,
             "variation_key": var_key,
+            "variant": format_variant(var_type, var_key),
             "source_value": src_val,
             "target_value": tgt_val,
             "state": tgt_state,
@@ -255,14 +279,16 @@ def row_is_untranslated(row, entry, target_lang):
 
 
 # Thứ tự cột chuẩn của file CSV, dùng chung cho export và merge (LONG-format).
+# Rút gọn: bỏ "language" (cố định/lặp lại cho cả file -> truyền qua CLI khi
+# merge, không cần ghi vào từng dòng), gộp variation_type + variation_key
+# thành 1 cột "variant", và bỏ "state" (chỉ để tham khảo, merge không đọc
+# lại). Mục tiêu: CSV gọn, chỉ đủ thông tin AI dịch cần (key gốc + ngữ cảnh)
+# và thông tin merge cần để định vị đúng path (variant).
 CSV_FIELDS = [
     "key",
-    "language",
-    "variation_type",
-    "variation_key",
+    "variant",
     "source_value",
     "target_value",
-    "state",
 ]
 
 
@@ -305,11 +331,14 @@ def validate_languages(languages, source_lang):
 
 
 def wide_csv_fields(target_langs):
-    """Danh sách cột CSV wide-mode: 4 cột cố định + 2 cột/ngôn ngữ đích."""
-    fields = ["key", "variation_type", "variation_key", "source_value"]
+    """
+    Danh sách cột CSV wide-mode: 3 cột cố định (key, variant, source_value)
+    + 1 cột `{lang}_target`/ngôn ngữ đích. Không có cột `{lang}_state`: chỉ
+    để tham khảo, merge không đọc lại, nên bỏ cho CSV gọn.
+    """
+    fields = ["key", "variant", "source_value"]
     for lang in target_langs:
         fields.append(f"{lang}_target")
-        fields.append(f"{lang}_state")
     return fields
 
 
@@ -353,6 +382,7 @@ def iter_rows_for_key_wide(key, entry, source_lang, target_langs):
             "key": key,
             "variation_type": var_type,
             "variation_key": var_key,
+            "variant": format_variant(var_type, var_key),
             "source_value": source_units.get((var_type, var_key), ""),
         }
         for lang in target_langs:

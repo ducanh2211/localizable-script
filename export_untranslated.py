@@ -27,8 +27,15 @@ Có 2 chế độ:
      Ví dụ:
        python3 export_untranslated.py Localizable.xcstrings todo_wide.csv --languages vi,ja,ko
 
+Cột CSV long-format: key, variant, source_value, target_value.
+Cột CSV wide-format: key, variant, source_value, {lang}_target (x N ngôn ngữ).
+"variant" gộp (variation_type, variation_key) làm 1, vd. "plural.one",
+"device.iphone"; rỗng nghĩa là string đơn giản. Đây là thông tin merge cần
+để ghi đúng path -- KHÔNG sửa cột này.
+
 CSV xuất ra dùng encoding utf-8-sig để Excel / Google Sheets mở đúng Unicode.
 (Các) cột target để trống -> đây là chỗ bạn (hoặc AI Chatbot) điền bản dịch.
+Khi merge long-format, nhớ truyền lại đúng ngôn ngữ qua --lang.
 """
 
 import sys
@@ -60,13 +67,14 @@ def main_long(argv):
 
     # --- Ghi ra CSV ---
     with open(output_csv, "w", encoding="utf-8-sig", newline="") as f:
-        writer = csv.DictWriter(f, fieldnames=x.CSV_FIELDS)
+        writer = csv.DictWriter(f, fieldnames=x.CSV_FIELDS, extrasaction="ignore")
         writer.writeheader()
         writer.writerows(untranslated_rows)
 
     print(f"Đã export {len(untranslated_rows)} dòng CHƯA DỊCH ra: {output_csv}")
     print(f"  Ngôn ngữ nguồn: {source_lang}  |  Ngôn ngữ đích: {target_lang}")
-    print("  -> Điền bản dịch vào cột 'target_value' rồi dùng merge_csv.py.")
+    print(f"  -> Điền bản dịch vào cột 'target_value' rồi dùng: "
+          f"merge_csv.py ... --lang {target_lang}")
     return 0
 
 
@@ -114,7 +122,7 @@ def main_wide(argv):
     # --- Ghi ra CSV ---
     fieldnames = x.wide_csv_fields(target_langs)
     with open(output_csv, "w", encoding="utf-8-sig", newline="") as f:
-        writer = csv.DictWriter(f, fieldnames=fieldnames)
+        writer = csv.DictWriter(f, fieldnames=fieldnames, extrasaction="ignore")
         writer.writeheader()
         writer.writerows(untranslated_rows)
 

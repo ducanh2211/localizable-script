@@ -7,8 +7,13 @@ Merge bản dịch từ file CSV (đã điền cột target) NGƯỢC vào file 
 TẠO RA FILE MỚI có đuôi `.merged.xcstrings`.
 
 Tự động NHẬN DIỆN định dạng CSV theo header, không cần chọn cờ:
-  - LONG-FORMAT: có cột `language` + `target_value` (1 ngôn ngữ/dòng).
+  - LONG-FORMAT: có cột `target_value` (1 ngôn ngữ/file, KHÔNG có cột
+    `language` trong CSV -- phải truyền ngôn ngữ đích qua `--lang`).
   - WIDE-FORMAT: có (các) cột `{lang}_target` (nhiều ngôn ngữ/dòng).
+
+Cả 2 định dạng đều định vị path (plural/device variation) qua 1 cột gộp
+"variant" (vd. "plural.one", "device.iphone", rỗng = string đơn giản) thay
+vì 2 cột `variation_type`/`variation_key` riêng như bản cũ.
 
 Nguyên tắc bảo toàn format (áp dụng cho cả 2 định dạng):
   - Chỉ chỉnh/thêm phần bản dịch của ngôn ngữ đích liên quan.
@@ -24,7 +29,7 @@ Nguyên tắc bảo toàn format (áp dụng cho cả 2 định dạng):
 
 --- Quy tắc WIDE-FORMAT ---
 So sánh trực tiếp với giá trị HIỆN CÓ trong chính file .xcstrings truyền vào
-(existing_value), theo đúng path (variation_type, variation_key):
+(existing_value), theo đúng path lấy từ cột "variant":
   - {lang}_target rỗng                       -> bỏ qua, không đổi gì.
     (KHÔNG hỗ trợ xoá bản dịch qua CSV bằng cách để trống ô.)
   - {lang}_target == existing_value,
@@ -51,10 +56,14 @@ tiếp trong Xcode), so sánh existing_value sẽ dựa trên bản MỚI hơn �
 `--dry-run` để xem trước danh sách thay đổi trước khi ghi file thật.
 
 Cách dùng:
-    python3 merge_csv.py <input.xcstrings> <translated.csv> [--dry-run]
+    python3 merge_csv.py <input.xcstrings> <translated.csv> [--lang <lang>] [--dry-run]
+
+`--lang` BẮT BUỘC với long-format (CSV không còn cột `language`, phải nói
+rõ ngôn ngữ đích qua CLI). Với wide-format, `--lang` không cần (ngôn ngữ suy
+ra từ tên cột `{lang}_target`) và sẽ bị bỏ qua nếu lỡ truyền vào.
 
 Ví dụ:
-    python3 merge_csv.py Localizable.xcstrings todo.csv
+    python3 merge_csv.py Localizable.xcstrings todo.csv --lang vi
     -> tạo ra: Localizable.merged.xcstrings
 
     python3 merge_csv.py Localizable.xcstrings all_wide.csv --dry-run
@@ -97,15 +106,15 @@ def _ensure_string_unit(entry, target_lang, var_type, var_key):
 def _detect_mode(fieldnames):
     """Nhận diện long/wide dựa trên tên cột CSV. Trả về None nếu không rõ."""
     fieldnames = fieldnames or []
-    if "language" in fieldnames and "target_value" in fieldnames:
+    if "target_value" in fieldnames:
         return "long"
     if any(f.endswith("_target") for f in fieldnames):
         return "wide"
     return None
 
 
-def merge_long(data, rows):
-    """Merge long-format -- LOGIC GIỮ NGUYÊN 100% so với bản gốc."""
+def merge_long(data, rows, target_lang):
+    """Merge long-format. target_lang truyền qua CLI (--lang), không còn đọc từ CSV."""
     strings = data.get("strings", {})
     merged_count = 0
     skipped_empty = 0
@@ -118,9 +127,7 @@ def merge_long(data, rows):
             continue
 
         key = row.get("key", "")
-        target_lang = row.get("language", "")
-        var_type = row.get("variation_type", "") or ""
-        var_key = row.get("variation_key", "") or ""
+        var_type, var_key = x.parse_variant(row.get("variant", ""))
 
         entry = strings.get(key)
         if entry is None:
@@ -153,8 +160,7 @@ def merge_wide(data, rows, fieldnames):
 
     for row in rows:
         key = row.get("key", "")
-        var_type = row.get("variation_type", "") or ""
-        var_key = row.get("variation_key", "") or ""
+        var_type, var_key = x.parse_variant(row.get("variant", ""))
 
         entry = strings.get(key)
         if entry is None:
@@ -235,8 +241,19 @@ def _print_report(report, out_path, dry_run):
 def main(argv):
     args = argv[1:]
     dry_run = "--dry-run" in args
-    positional = [a for a in args if a != "--dry-run"]
+    args = [a for a in args if a != "--dry-run"]
 
+    target_lang = None
+    if "--lang" in args:
+        idx = args.index("--lang")
+        if idx + 1 >= len(args):
+            print(__doc__)
+            print("LỖI: --lang cần giá trị, ví dụ --lang vi", file=sys.stderr)
+            return 1
+        target_lang = args[idx + 1]
+        args = args[:idx] + args[idx + 2:]
+
+    positional = args
     if len(positional) != 2:
         print(__doc__)
         print("LỖI: cần đúng 2 tham số (input.xcstrings, translated.csv).", file=sys.stderr)
@@ -258,7 +275,7 @@ def main(argv):
     if mode is None:
         print(f"LỖI: không nhận diện được định dạng CSV từ header: {fieldnames}", file=sys.stderr)
         print(
-            "  Cần có cột 'language' + 'target_value' (long-format) "
+            "  Cần có cột 'target_value' (long-format) "
             "hoặc '{lang}_target' (wide-format).",
             file=sys.stderr,
         )
@@ -266,8 +283,21 @@ def main(argv):
 
     # --- Áp bản dịch vào cây dữ liệu ---
     if mode == "long":
-        report = merge_long(data, rows)
+        if not target_lang:
+            print(__doc__)
+            print(
+                "LỖI: long-format cần --lang <ngôn ngữ đích> (CSV không còn cột 'language').",
+                file=sys.stderr,
+            )
+            return 1
+        report = merge_long(data, rows, target_lang)
     else:
+        if target_lang:
+            print(
+                "CẢNH BÁO: --lang bị bỏ qua ở wide-format "
+                "(ngôn ngữ được suy ra từ tên cột '{lang}_target').",
+                file=sys.stderr,
+            )
         report = merge_wide(data, rows, fieldnames)
 
     # --- Ghi ra file .merged.xcstrings (KHÔNG ghi đè file gốc) ---

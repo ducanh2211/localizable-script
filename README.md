@@ -10,10 +10,15 @@ Hỗ trợ **2 chế độ CSV**, tự chọn tuỳ workflow dịch:
 | Chế độ | Khi nào dùng | Đặc điểm |
 | --- | --- | --- |
 | **long-format** (mặc định) | Dịch tách riêng theo từng ngôn ngữ, chạy script riêng cho mỗi ngôn ngữ | 1 dòng CSV = 1 key + 1 ngôn ngữ |
-| **wide-format** (`--languages`) | Dịch 1 key cho nhiều ngôn ngữ cùng lúc | 1 dòng CSV = 1 key, N cặp cột `{lang}_target`/`{lang}_state` |
+| **wide-format** (`--languages`) | Dịch 1 key cho nhiều ngôn ngữ cùng lúc | 1 dòng CSV = 1 key, N cột `{lang}_target` |
 
-`merge_csv.py` và `verify.py` tự nhận diện/chấp nhận cả 2 chế độ, không cần
-chọn cờ riêng.
+CSV chỉ giữ đúng những cột AI/người dịch cần: `key`, `variant` (định vị
+plural/device), `source_value`, và (các) cột `target`. Không có cột
+`language`/`state` lặp lại hay chỉ để tham khảo.
+
+`merge_csv.py` tự nhận diện long/wide theo header, không cần chọn cờ —
+riêng long-format cần thêm `--lang <mã ngôn ngữ>` vì CSV không còn cột
+`language`. `verify.py` chấp nhận cả 2 chế độ như cũ.
 
 > Viết bằng Python (không phải Swift) vì chỉ Python cho phép kiểm soát chính
 > xác cách serialize JSON để khớp 100% với quy ước ghi file của Xcode
@@ -62,12 +67,12 @@ Mở `todo.csv` (Excel / Google Sheets / editor). Các cột:
 | Cột              | Ý nghĩa                                                        |
 | ---------------- | ------------------------------------------------------------- |
 | `key`            | Định danh chuỗi trong `.xcstrings` — **KHÔNG sửa**            |
-| `language`       | Ngôn ngữ đích — **KHÔNG sửa**                                 |
-| `variation_type` | Rỗng / `plural` / `device` — **KHÔNG sửa**                    |
-| `variation_key`  | Rỗng / `one`,`other` / `iphone`,`ipad`... — **KHÔNG sửa**     |
+| `variant`        | Rỗng / `plural.one` / `device.iphone`... — định vị path cho merge, **KHÔNG sửa** |
 | `source_value`   | Chuỗi gốc (tiếng nguồn) để làm ngữ cảnh dịch — **KHÔNG sửa**  |
 | `target_value`   | **CHỖ ĐIỀN BẢN DỊCH** ← chỉ sửa cột này                       |
-| `state`          | State hiện tại — có thể bỏ qua                                |
+
+(Ngôn ngữ đích không còn là 1 cột trong CSV — nó cố định cho cả file, truyền
+qua tham số dòng lệnh khi merge, xem Bước 3.)
 
 **Điền bản dịch vào cột `target_value`.** Lưu ý khi dịch:
 - Giữ nguyên mọi **placeholder**: `%@`, `%lld`, `%d`, `%1$@`, `%2$@`... phải
@@ -78,14 +83,22 @@ Mẹo dùng AI: dán nội dung CSV và yêu cầu *"dịch cột source_value s
 Việt, điền vào target_value, giữ nguyên tất cả placeholder dạng %@ %lld %1$@,
 không đổi các cột khác, trả về đúng định dạng CSV"*.
 
+> Mẹo tiết kiệm token: `source_value` chỉ cần thiết để AI có ngữ cảnh khi
+> dịch — `merge_csv.py` không đọc lại cột này. Nên yêu cầu AI **trả về CSV
+> không có cột `source_value`** (chỉ `key, variant, target_value`), tránh
+> việc AI phải echo lại nguyên văn cột đó trên mọi dòng output một cách vô
+> ích. Xem 2 prompt mẫu ở cuối file — đã có sẵn quy tắc này.
+
 Lưu lại thành file CSV (giữ encoding UTF-8), ví dụ `todo_translated.csv`.
 
 ### Bước 3 — Merge bản dịch ngược vào `.xcstrings`
 
 ```bash
-python3 merge_csv.py Localizable.xcstrings todo_translated.csv
+python3 merge_csv.py Localizable.xcstrings todo_translated.csv --lang vi
 ```
 
+- `--lang vi` **bắt buộc** với long-format vì CSV không còn cột `language` —
+  phải nói rõ ngôn ngữ đích qua CLI (đúng ngôn ngữ đã dùng lúc export).
 - Tạo ra file mới **`Localizable.merged.xcstrings`** (KHÔNG ghi đè file gốc).
 - Chỉ những dòng có `target_value` khác rỗng mới được merge; đánh dấu
   state = `translated`.
@@ -141,17 +154,18 @@ python3 export_untranslated.py Localizable.xcstrings todo_wide.csv --languages v
 ### Bước 2 — Schema CSV wide-format
 
 ```
-key,variation_type,variation_key,source_value,vi_target,vi_state,ja_target,ja_state
-welcome,,,Welcome,Chào mừng,translated,,new
-items,plural,one,%d item,,new,,new
-items,plural,other,%d items,,new,,new
+key,variant,source_value,vi_target,ja_target
+welcome,,Welcome,Chào mừng,
+items,plural.one,%d item,,
+items,plural.other,%d items,,
 ```
 
-- 1 dòng = 1 `(key, variation_type, variation_key)` — **không lặp theo ngôn
-  ngữ** như long-format.
-- Mỗi ngôn ngữ đích có 2 cột: `{lang}_target` (**chỗ điền dịch**) và
-  `{lang}_state` (chỉ để tham khảo tình trạng hiện tại, **merge không đọc
-  cột này**).
+- 1 dòng = 1 `(key, variant)` — **không lặp theo ngôn ngữ** như long-format.
+- `variant` gộp `(variation_type, variation_key)` thành 1 cột, vd.
+  `plural.one`, `device.iphone`; rỗng = string đơn giản.
+- Mỗi ngôn ngữ đích có đúng 1 cột `{lang}_target` (**chỗ điền dịch**). Không
+  còn cột `{lang}_state` — thông tin đó merge không đọc lại nên đã bỏ để CSV
+  gọn hơn.
 - `{lang}_target` được pre-fill giá trị hiện có (kể cả rỗng) để vừa làm ngữ
   cảnh vừa dùng so sánh lúc merge.
 - Muốn dịch xong 1 key cho hết các ngôn ngữ, chỉ cần điền các cột `_target`
@@ -219,8 +233,9 @@ Bộ script tự động nhận diện và xử lý cả 3 dạng cấu trúc tr
 - Số nhiều (`variations.plural`: `one`, `other`, `few`, `many`, `zero`).
 - Theo thiết bị (`variations.device`: `iphone`, `ipad`, `mac`...).
 
-Mỗi ô dịch được định danh bằng cặp `(variation_type, variation_key)` trong
-CSV, nên merge luôn đặt bản dịch vào đúng vị trí. **Không tự sửa 2 cột này.**
+Mỗi ô dịch được định danh bằng cột `variant` (gộp `variation_type` +
+`variation_key`, vd. `plural.one`, `device.iphone`) trong CSV, nên merge
+luôn đặt bản dịch vào đúng vị trí. **Không tự sửa cột này.**
 
 ## Ghi chú kỹ thuật
 
@@ -245,29 +260,32 @@ dung file CSV (todo.csv / todo_wide.csv) ngay phía dưới trong cùng tin nh�
 
 ```
 Bạn là biên dịch viên phần mềm. Tôi sẽ dán một file CSV xuất ra từ Xcode
-String Catalog (.xcstrings), có các cột: key, language, variation_type,
-variation_key, source_value, target_value, state.
+String Catalog (.xcstrings), có các cột: key, variant, source_value,
+target_value. Toàn bộ file này chỉ dịch sang MỘT ngôn ngữ đích: <NGÔN NGỮ
+ĐÍCH> (mã ISO, ví dụ "vi" = Tiếng Việt).
 
-Nhiệm vụ: dịch cột `source_value` sang ngôn ngữ ghi trong cột `language`
-(mã ISO, vd "vi" = Tiếng Việt, "ja" = Tiếng Nhật, "ko" = Tiếng Hàn), rồi điền
-kết quả vào cột `target_value`.
+Nhiệm vụ: dịch cột `source_value` sang ngôn ngữ trên, rồi điền kết quả vào
+cột `target_value`.
 
 Quy tắc bắt buộc:
 1. CHỈ điền/sửa cột `target_value`. Không đổi bất kỳ cột nào khác (key,
-   language, variation_type, variation_key, source_value, state).
+   variant, source_value).
 2. Giữ NGUYÊN VẸN mọi placeholder xuất hiện trong source_value: %@, %d,
    %lld, %f, %1$@, %2$lld... phải xuất hiện đủ số lượng, đúng thứ tự đánh
    số (nếu có $), và đúng loại trong bản dịch. %% là dấu % literal, giữ
    nguyên, không dịch.
-3. Nếu variation_type là "plural": các dòng cùng key là các dạng số nhiều
-   (one/other/few/many/zero...) của CÙNG một câu — dịch tự nhiên theo ngữ
-   pháp số nhiều của ngôn ngữ đích, không cần dịch y hệt cấu trúc tiếng Anh.
-4. Nếu variation_type là "device": các dòng cùng key là biến thể theo thiết
-   bị (iphone/ipad/mac...) — thường nội dung gần giống nhau, dịch nhất quán.
+3. Nếu cột `variant` bắt đầu bằng "plural.": các dòng cùng key là các dạng
+   số nhiều (plural.one/plural.other/plural.few/...) của CÙNG một câu — dịch
+   tự nhiên theo ngữ pháp số nhiều của ngôn ngữ đích, không cần dịch y hệt
+   cấu trúc tiếng Anh.
+4. Nếu cột `variant` bắt đầu bằng "device.": các dòng cùng key là biến thể
+   theo thiết bị (device.iphone/device.ipad/...) — thường nội dung gần
+   giống nhau, dịch nhất quán.
 5. Nếu source_value rỗng, để target_value rỗng (không tự bịa nội dung).
 6. Giữ nguyên số lượng dòng, thứ tự dòng. KHÔNG thêm/xoá/gộp dòng.
-7. Trả về NGUYÊN VẸN định dạng CSV (đủ header, đúng số cột), không thêm giải
-   thích hay text nào khác ngoài CSV.
+7. CSV trả về CHỈ cần 3 cột: key, variant, target_value — BỎ HẲN cột
+   source_value (không cần echo lại, đỡ tốn token output). Vẫn giữ đủ 3 cột
+   trên, đúng header, không thêm giải thích hay text nào khác ngoài CSV.
 
 Dữ liệu CSV:
 ```
@@ -281,9 +299,8 @@ tế trong file CSV của bạn (vd. nếu export với `--languages vi,ja,ko` t
 ```
 Bạn là biên dịch viên phần mềm, thành thạo nhiều ngôn ngữ. Tôi sẽ dán một
 file CSV xuất ra từ Xcode String Catalog (.xcstrings), có các cột: key,
-variation_type, variation_key, source_value, rồi đến từng cặp cột
-{mã_ngôn_ngữ}_target / {mã_ngôn_ngữ}_state cho mỗi ngôn ngữ đích (vd.
-vi_target/vi_state, ja_target/ja_state, ko_target/ko_state...).
+variant, source_value, rồi đến từng cột {mã_ngôn_ngữ}_target cho mỗi ngôn
+ngữ đích (vd. vi_target, ja_target, ko_target...).
 
 Nhiệm vụ: với MỖI dòng, dịch `source_value` sang TẤT CẢ ngôn ngữ đích có mặt
 trong header (suy ra ngôn ngữ từ tiền tố cột, vd cột "vi_target" ứng với
@@ -291,29 +308,27 @@ Tiếng Việt, "ja_target" ứng với Tiếng Nhật...), điền kết quả 
 `{lang}_target` tương ứng.
 
 Quy tắc bắt buộc:
-1. CHỈ điền/sửa các cột `{lang}_target`. KHÔNG sửa cột `{lang}_state` (chỉ
-   để tham khảo, không dùng để merge) và không đổi key, variation_type,
-   variation_key, source_value.
+1. CHỈ điền/sửa các cột `{lang}_target`. Không đổi key, variant, source_value.
 2. Nếu một ô `{lang}_target` ĐÃ CÓ SẴN giá trị (không rỗng) — đó là bản dịch
    cũ, hiện ra để bạn tham khảo ngữ cảnh. GIỮ NGUYÊN, không sửa, trừ khi tôi
-   nói rõ là cần dịch lại (vd. state ghi "needs_review" nghĩa là câu nguồn
-   đã đổi, bản dịch cũ có thể không còn đúng — hãy dịch lại ô đó).
+   nói rõ là cần dịch lại.
 3. Chỉ cần điền vào những ô `{lang}_target` đang RỖNG.
 4. Giữ NGUYÊN VẸN mọi placeholder trong source_value: %@, %d, %lld, %f,
    %1$@, %2$lld... phải xuất hiện đủ số lượng, đúng thứ tự đánh số (nếu có
    $), đúng loại, trong TẤT CẢ ngôn ngữ dịch. %% là dấu % literal, giữ
    nguyên, không dịch.
-5. Nếu variation_type là "plural": các dòng cùng key là các dạng số nhiều
-   (one/other/few/many/zero...) của CÙNG một câu — dịch tự nhiên theo ngữ
-   pháp số nhiều của TỪNG ngôn ngữ đích (số lượng category có thể khác nhau
-   giữa các ngôn ngữ, không sao).
-6. Nếu variation_type là "device": các dòng cùng key là biến thể theo thiết
-   bị (iphone/ipad/mac...) — thường nội dung gần giống nhau, dịch nhất quán.
+5. Nếu cột `variant` bắt đầu bằng "plural.": các dòng cùng key là các dạng
+   số nhiều (plural.one/plural.other/...) của CÙNG một câu — dịch tự nhiên
+   theo ngữ pháp số nhiều của TỪNG ngôn ngữ đích (số lượng category có thể
+   khác nhau giữa các ngôn ngữ, không sao).
+6. Nếu cột `variant` bắt đầu bằng "device.": các dòng cùng key là biến thể
+   theo thiết bị (device.iphone/device.ipad/...) — thường nội dung gần
+   giống nhau, dịch nhất quán.
 7. Nếu source_value rỗng, để tất cả target rỗng (không tự bịa nội dung).
-8. Giữ nguyên số lượng dòng, số lượng cột, thứ tự dòng và cột. KHÔNG
-   thêm/xoá/gộp dòng hay cột.
-9. Trả về NGUYÊN VẸN định dạng CSV (đủ header, đúng số cột), không thêm giải
-   thích hay text nào khác ngoài CSV.
+8. Giữ nguyên số lượng dòng, thứ tự dòng. KHÔNG thêm/xoá/gộp dòng.
+9. CSV trả về CHỈ cần key, variant, và các cột {lang}_target — BỎ HẲN cột
+   source_value (không cần echo lại, đỡ tốn token output). Vẫn giữ đúng
+   header, không thêm giải thích hay text nào khác ngoài CSV.
 
 Dữ liệu CSV:
 ```
