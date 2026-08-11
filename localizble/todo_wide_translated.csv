@@ -1,0 +1,356 @@
+key,variant,fr_target,de_target,ja_target,ko_target,es_target
+activity.burnCalories,,Brûler des calories,Kalorien verbrennen,消費カロリー,소모 칼로り,Quemar calorías
+activity.burnTitle,,Brûlé,Verbrannt,消費済み,소모됨,Quemado
+activity.dailySteps,,Pas quotidiens,Tägliche Schritte,1日の歩数,일일 걸음 수,Pasos diarios
+activity.delete.title,,Supprimer l'activité,Aktivität löschen,アクティビティを削除,활동 삭제,Eliminar actividad
+activity.deleteWorkoutDescription,,Vous ne verrez plus cet entraînement.,Du wirst dieses Workout nicht mehr sehen.,このワークアウトは表示されなくなります。,이 운동은 더 이상 표시되지 않습니다.,Ya no verás este entrenamiento.
+activity.deleteWorkoutTitle,,Supprimer l'entraînement ?,Workout löschen?,ワークアウトを削除しますか？,운동을 삭제하시겠습니까?,¿Eliminar entrenamiento?
+activity.duration,,Durée,Dauer,時間,소요 시간,Duración
+activity.empty,,"Aucune
+activité","Keine
+Aktivität","アクティビティ
+なし","활동
+없음","Sin
+actividad"
+activity.examplePlaceholder,,ex. Surf,z. B. Surfen,例：サーフィン,예: 서핑,ej. Surf
+activity.exercise,,Exercice,Übung,運動,운동,Ejercicio
+activity.exerciseBurn,,Calories brûlées (exercice),Übungsverbrauch,運動消費カロリー,운동 소모 칼로리,Calorías de ejercicio
+activity.exercises,,Exercices,Übungen,エクササイズ,운동 목록,Ejercicios
+activity.log,,Enregistrer l'exercice,Übung aufzeichnen,運動を記録,운동 기록,Registrar ejercicio
+activity.loggedExercises,,Exercices enregistrés,Aufgezeichnete Übungen,記録された運動,기록된 운동,Ejercicios registrados
+activity.name,,Nom de l'activité,Aktivitätsname,アクティビティ名,활동 이름,Nombre de la actividad
+activity.searchPlaceholder,,Rechercher une activité,Aktivität suchen,アクティビティを検索,활동 검색,Buscar actividad
+activity.title,,Activité,Aktivität,アクティビティ,활동,Actividad
+chooseLanguage.country.english,,Anglais,Englisch,英語,영어,Inglés
+chooseLanguage.country.french,,Français,Französisch,フランス語,프랑스어,Francés
+chooseLanguage.country.Germany,,Allemand,Deutsch,ドイツ語,독일어,Alemán
+chooseLanguage.country.japanese,,Japonais,Japanisch,日本語,일본어,Japonés
+chooseLanguage.country.korean,,Coréen,Koreanisch,韓国語,한국어,Coreano
+chooseLanguage.country.spanish,,Espagnol,Spanisch,スペイン語,스페인어,Español
+chooseLanguage.country.vietnamese,,Vietnamien,Vietnamesisch,ベトナム語,베트남어,Vietnamita
+chooseLanguage.title,,Langue,Sprache,言語,언어,Idioma
+common.add,,Ajouter,Hinzufügen,追加,추가,Añadir
+common.apply,,Appliquer,Anwenden,適用,적용,Aplicar
+common.applyChange,,Appliquer les modifications,Änderungen anwenden,変更を適用,변경사항 적용,Aplicar cambios
+common.back,,Retour,Zurück,戻る,뒤로,Atrás
+common.cancel,,Annuler,Abbrechen,キャンセル,취소,Cancelar
+common.close,,Fermer,Schließen,閉じる,닫기,Cerrar
+common.confirm,,Confirmer,Bestätigen,確認,확인,Confirmar
+common.continue,,Continuer,Weiter,次へ,계속,Continuar
+common.custom,,Personnalisé,Benutzerdefiniert,カスタム,사용자 지정,Personalizado
+common.delete,,Supprimer,Löschen,削除,삭제,Eliminar
+common.discoverNow,,Découvrir maintenant,Jetzt entdecken,今すぐ試す,지금 둘러보기,Descubrir ahora
+common.done,,Terminé,Fertig,完了,완료,Listo
+common.edit,,Modifier,Bearbeiten,編集,편집,Editar
+common.filter,,Filtres,Filter,フィルター,필터,Filtros
+common.generate,,Générer,Generieren,生成,생성,Generar
+common.gotIt,,Compris,Verstanden,了解,확인,Entendido
+common.level.high,,Élevé,Hoch,高,높음,Alto
+common.level.light,,Léger,Leicht,軽度,가벼움,Ligero
+common.level.low,,Faible,Niedrig,低,낮음,Bajo
+common.level.moderate,,Modéré,Moderat,中程度,보통,Moderado
+common.logMore,,Enregistrer plus,Mehr aufzeichnen,さらに記録,추가 기록,Registrar más
+common.more,,Plus,Mehr,その他,더보기,Más
+common.next,,Suivant,Weiter,次へ,다음,Siguiente
+common.noData,,Aucune donnée,Keine Daten,データなし,데이터 없음,Sin datos
+common.noItemMatching,,"Aucun %1$@ correspondant trouvé.
+Essayez de rechercher avec d'autres mots-clés.","Kein passender %1$@ gefunden.
+Versuche es mit anderen Suchbegriffen.","一致する%1$@が見つかりません。
+別のキーワードで検索してみてください。","일치하는 %1$@을(를) 찾을 수 없습니다.
+다른 키워드로 검색해 보세요.","No se encontró ningún %1$@ coincidente.
+Intenta buscar con palabras clave diferentes."
+common.ok,,OK,OK,OK,확인,Aceptar
+common.paste,,Coller,Einfügen,貼り付け,붙여넣기,Pegar
+common.remove,,Retirer,Entfernen,削除,제거,Quitar
+common.reset,,Réinitialiser,Zurücksetzen,リセット,재설정,Restablecer
+common.retake,,Reprendre,Erneut aufnehmen,再撮影,다시 촬영,Retomar
+common.retry,,Réessayer,Wiederholen,再試行,재시도,Reintentar
+common.save,,Enregistrer,Speichern,保存,저장,Guardar
+common.skip,,Passer,Überspringen,スキップ,건너뛰기,Omitir
+common.today,,Aujourd'hui,Heute,今日,오늘,Hoy
+common.tryAgain,,Réessayer,Erneut versuchen,もう一度試す,다시 시도,Inténtalo de nuevo
+common.unit.hour,,Heure,Stunde,時間,시간,Hora
+common.unit.hour,plural.one,%lld heure,%lld Stunde,%lld時間,%lld시간,%lld hora
+common.unit.hour,plural.other,%lld heures,%lld Stunden,%lld時間,%lld시간,%lld horas
+common.unit.minute,,Minute,Minute,分,분,Minuto
+common.unit.minute,plural.one,%lld minute,%lld Minute,%lld分,%lld분,%lld minuto
+common.unit.minute,plural.other,%lld minutes,%lld Minuten,%lld分,%lld분,%lld minutos
+common.unsavedChanges.description,,"Si vous quittez maintenant, vos informations et objectifs mis à jour ne seront pas enregistrés.","Wenn du jetzt gehst, werden deine aktualisierten Informationen und Ziele nicht gespeichert.",今終了すると、更新された情報や目標は保存されません。,지금 나가시면 업데이트된 정보와 목표가 저장되지 않습니다.,"Si sales ahora, la información y los objetivos actualizados no se guardarán."
+common.unsavedChanges.title,,Quitter sans enregistrer ?,Ohne Speichern verlassen?,保存せずに移動しますか？,저장하지 않고 나갈까요?,¿Salir sin guardar?
+common.yesterday,,Hier,Gestern,昨日,어제,Ayer
+daily.recommendations,,Recommandations quotidiennes,Tägliche Empfehlungen,今日の推奨事項,일일 추천,Recomendaciones diarias
+daily.suggestedRoutine,,Routine suggérée,Vorgeschlagene Routine,おすすめのルーティン,추천 루틴,Rutina sugerida
+daily.todaySoFar,,Aujourd'hui jusqu'à présent,Heute bisher,今日の達成状況,오늘의 기록,Hoy hasta ahora
+daily.watchOutFor,,À surveiller,Achte auf,注意すべき点,주의할 점,Presta atención a
+error.generic,,Une erreur est survenue,Ein Fehler ist aufgetreten,エラーが発生しました,오류가 발생했습니다,Ocurrió un error
+error.noInternetDescription,,Veuillez vérifier votre connexion Internet et réessayer.,Bitte überprüfe deine Internetverbindung und versuche es erneut.,インターネット接続を確認して、もう一度お試しください。,인터넷 연결을 확인하고 다시 시도해 주세요.,"Por favor, comprueba tu conexión a internet e inténtalo de nuevo."
+error.noInternetTitle,,Pas de connexion,Keine Verbindung,接続なし,연결 없음,Sin conexión
+health.criticalHigh,,Critique élevé,Kritisch hoch,危険（高）,위험 (높음),Crítico alto
+health.criticalLow,,Critique bas,Kritisch niedrig,危険（低）,위험 (낮음),Crítico bajo
+insight.error.loadFailed,,L'analyse n'a pas pu être chargée,Insight konnte nicht geladen werden,分析を読み込めませんでした,인사이트를 불러올 수 없습니다,No se pudo cargar el análisis
+insight.generate,,Générer une analyse,Insight generieren,分析を生成,인사이트 생성,Generar análisis
+insight.generating,,Génération des analyses IA,KI-Insights werden generiert,AI分析を生成中,AI 인사이트 생성 중,Generando análisis de IA
+insight.notReadyDescription,,"Votre analyse personnalisée n'est pas encore prête.
+Nous analysons vos données pour fournir
+ des recommandations utiles.","Dein personalisierter Insight ist noch nicht bereit.
+Wir analysieren deine Daten, um
+ sinnvolle Empfehlungen zu liefern.","パーソナライズされた分析はまだ準備中です。
+有益なアドバイスを提供するために
+ データを分析しています。","맞춤형 인사이트가 아직 준비되지 않았습니다.
+유용한 추천을 제공하기 위해
+ 데이터를 분석하는 중입니다.","Tu análisis personalizado aún no está listo.
+Estamos analizando tus datos para ofrecerte
+ recomendaciones útiles."
+insight.readyTitle,,Analyse du jour prête,Heutiger Insight bereit,本日の分析が完了しました,오늘의 인사이트 준비 완료,Análisis de hoy listo
+insight.title,,Analyse quotidienne IA,Täglicher KI-Insight,AIデイリー分析,AI 일일 인사이트,Análisis diario IA
+meal.analyze,,Analyser,Analysieren,分析する,분석하기,Analizar
+meal.analyzing.detectingItems,,Détection des aliments...,Lebensmittel werden erkannt...,食品を検出中...,음식 인식 중...,Detectando alimentos...
+meal.analyzing.finalizing,,Finalisation des détails...,Details werden fertiggestellt...,詳細を仕上げ中...,세부 정보 마무리 중...,Finalizando detalles...
+meal.analyzing.processing,,Traitement en cours...,Wird verarbeitet...,処理中...,처리 중...,Procesando...
+meal.analyzing.ready,,Prêt à analyser,Bereit zur Analyse,分析の準備完了,분석 준비 완료,Listo para analizar
+meal.analyzing.searchingMatch,,Recherche de la meilleure correspondance...,Suche nach der besten Übereinstimmung...,最適な一致を検索中...,최적의 검색 결과 찾는 중...,Buscando la mejor coincidencia...
+meal.cameraTip.foodPosition,,Placez votre plat dans le carré et prenez une photo claire montrant autant d'ingrédients que possible.,"Positioniere dein Essen im Quadrat und mache ein klares Foto, das so viele Zutaten wie möglich zeigt.",枠内に料理を収め、できるだけ多くの食材が見えるように鮮明な写真を撮影してください。,사각형 안에 음식을 맞추고 가능한 한 많은 재료가 보이도록 선명하게 촬영하세요.,Coloca la comida dentro del cuadrado y toma una foto clara que muestre la mayor cantidad de ingredientes posible.
+meal.cameraTip.fullLabel,,Capturer l'étiquette complète,Vollständiges Etikett erfassen,ラベル全体を撮影,라벨 전체 촬영,Capturar la etiqueta completa
+meal.cameraTip.nutritionFactsPanel,,Assurez-vous que l'ensemble du tableau des valeurs nutritionnelles est visible et lisible.,"Stelle sicher, dass die gesamte Nährwerttabelle gut sichtbar und lesbar ist.",栄養成分表示全体が明確に見えるように撮影してください。,영양 성분표 전체가 명확하게 보이도록 하세요.,Asegúrate de que todo el panel de información nutricional sea visible y claro.
+meal.cameraTip.title,,Conseil,Tipp,ヒント,팁,Consejo
+meal.container.bento,,Boîte Bento,Bento-Box,弁当箱,도시락,Caja Bento
+meal.container.bentoShort,,Bento,Bento,弁当,도시락,Bento
+meal.container.bowl,,Bol,Schüssel,ボウル,보울,Tazón
+meal.container.cup,,Tasse,Becher,カップ,컵,Taza
+meal.container.plate,,Assiette,Teller,皿,접시,Plato
+meal.container.takeout,,Boîte à emporter,Takeout-Box,テイクアウト容器,포장 용기,Caja para llevar
+meal.container.takeoutShort,,À emporter,Takeout,テイクアウト,포장,Para llevar
+meal.delete.description,,Vous ne verrez plus ce repas.,Du wirst diese Mahlzeit nicht mehr sehen.,この食事記録は表示されなくなります。,이 식사 기록은 더 이상 표시되지 않습니다.,Ya no verás esta comida.
+meal.delete.title,,Supprimer le repas ?,Mahlzeit löschen?,食事を削除しますか？,식사를 삭제하시겠습니까?,¿Eliminar comida?
+meal.describePlaceholder,,Décrivez votre repas idéal (Optionnel),Beschreibe deine ideale Mahlzeit (Optional),理想の食事を説明（任意）,원하는 식사를 설명해 보세요 (선택),Describe tu comida ideal (Opcional)
+meal.detailMealHelp,,Détaillez votre repas pour aider l'IA à l'analyser plus précisément (Optionnel),"Beschreibe deine Mahlzeit detaillierter, um der KI bei der genauen Analyse zu helfen (Optional)",より正確なAI分析のために食事の詳細を入力してください（任意）,AI가 더 정확하게 분석할 수 있도록 식사를 상세히 작성해 보세요 (선택),Detalla tu comida para ayudar a la IA a analizarla con mayor precisión (Opcional)
+meal.discard.action,,Abandonner quand même,Trotzdem verwerfen,破棄する,취소하고 나가기,Descartar de todos modos
+meal.discard.description,,L'analyse de votre repas actuel n'a pas encore été enregistrée.,Deine aktuelle Mahlzeitanalyse wurde noch nicht gespeichert.,現在の食事分析はまだ保存されていません。,현재 식사 분석이 아직 저장되지 않았습니다.,Tu análisis de comida actual aún no se ha guardado.
+meal.discard.title,,Abandonner ce repas ?,Mahlzeit verwerfen?,この食事記録を破棄しますか？,이 식사 기록을 취소하시겠습니까?,¿Descartar esta comida?
+meal.edit.title,,Modifier le repas,Mahlzeit bearbeiten,食事を編集,식사 편집,Editar comida
+meal.empty,,"Aucun
+repas","Keine
+Mahlzeit","食事
+なし","식사
+없음","Sin
+comida"
+meal.error.unrecognizedFoodDescription,,Assurez-vous que l'aliment est bien net et réessayez.,"Stelle sicher, dass das Essen scharf zu sehen ist, und versuche es erneut.",対象にピントを合わせて、もう一度お試しください。,초점을 맞추고 다시 시도해 주세요.,Asegúrate de que el alimento esté enfocado e inténtalo de nuevo.
+meal.error.unrecognizedFoodTitle,,Aliment non reconnu,Essen nicht erkannt,食品を認識できませんでした,음식을 인식할 수 없음,No se pudo reconocer el alimento
+meal.exceedsDailyCalories,,Dépasse vos calories restantes pour la journée.,Übersteigt deine verbleibenden Tageskalorien.,1日の残りカロリーを超過しています。,오늘 남은 칼로리를 초과합니다.,Supera tus calorías diarias restantes.
+meal.fitsDailyCalories,,Correspond à vos calories estimées,Passt zu deinen geschätzten Kalorien,推定カロリーに収まっています,예상 칼로리에 적합합니다,Se ajusta a tus calorías estimadas
+meal.fitsYou,,Adapté pour vous,Passt zu dir,あなたに最適,나에게 맞춤,Ideal para ti
+meal.foodName,,Nom de l'aliment,Name des Lebensmittels,食品名,음식 이름,Nombre del alimento
+meal.labelOption,,Étiquette,Etikett,ラベル,라벨,Etiqueta
+meal.log,,Enregistrer le repas,Mahlzeit aufzeichnen,食事を記録,식사 기록,Registrar comida
+meal.loggedMeals,,Repas enregistrés,Aufgezeichnete Mahlzeiten,記録された食事,기록된 식사,Comidas registradas
+meal.mealName,,Nom du repas,Name der Mahlzeit,食事名,식사 이름,Nombre de la comida
+meal.mealOption,,Repas,Mahlzeit,食事,식사,Comida
+meal.size.estimated,,Taille de repas estimée,Geschätzte Portionsgröße,推定食事サイズ,예상 식사 양,Tamaño estimado de la comida
+meal.size.select,,Sélectionner la taille,Größe auswählen,サイズを選択,양 선택,Seleccionar tamaño
+meal.size.title,,Taille du repas,Portionsgröße,食事の量,식사 양,Tamaño de la comida
+meal.type.breakfast,,Petit-déjeuner,Frühstück,朝食,아침,Desayuno
+meal.type.dinner,,Dîner,Abendessen,夕食,저녁,Cena
+meal.type.lunch,,Déjeuner,Mittagessen,昼食,점심,Almuerzo
+meal.type.snack,,Collation,Snack,間食,간식,Aperitivo
+meal.typeMealPlaceholder,,Saisissez votre repas,Mahlzeit eingeben,食事を入力,식사 입력,Escribe tu comida
+meal.yourMeal,,Votre repas,Deine Mahlzeit,あなたの食事,내 식사,Tu comida
+mealReview.generate,,Générer un bilan,Bewertung generieren,レビューを生成,총평 생성,Generar revisión
+mealReview.generateInsight,,Générer une analyse,Insight generieren,分析を生成,인사이트 생성,Generar análisis
+mealReview.generating,,"Analyse des repas du jour et
+ création de conseils pour vous...","Heutige Mahlzeiten werden überprüft und
+ Insights für dich erstellt...","本日の食事を確認して
+ 分析を作成しています...","오늘의 식사를 검토하고
+ 맞춤 인사이트를 생성 중입니다...","Revisando las comidas de hoy y
+ creando análisis para ti..."
+mealReview.notReadyDescription,,Le bilan de vos repas n'est pas encore prêt. Nous analysons la nutrition et l'équilibre de vos repas pour vous fournir un retour précis.,"Deine Mahlzeitenbewertung ist noch nicht bereit. Wir analysieren Nährstoffe und ausgewogene Ernährung, um genaue Rückmeldungen zu geben.",食事レビューはまだ準備中です。正確なフィードバックを提供するために栄養バランスを分析しています。,식사 총평이 아직 준비되지 않았습니다. 정확한 피드백을 위해 영양과 균형을 분석 중입니다.,La revisión de tus comidas aún no está lista. Estamos analizando la nutrición y el equilibrio de tus comidas para ofrecerte información precisa.
+mealReview.shortReview,,Aperçu rapide,Kurze Bewertung,ショートレビュー,요약 총평,Resumen breve
+mealReview.title,,Bilan des repas,Mahlzeitenbewertung,食事の振り返り,식사 총평,Revisión de comidas
+nutrition.bmi.current,,Votre IMC : %@,Dein BMI: %@,現在のBMI: %@,현재 BMI: %@,Tu IMC: %@
+nutrition.bmi.explanation,,"L'indice de masse corporelle est une mesure standard de la graisse corporelle basée sur la taille et le poids, calculée selon les directives de l'OMS.","Der Body-Mass-Index ist ein Standardmaß für Körperfett basierend auf Größe und Gewicht, berechnet nach WHO-Richtlinien.",ボディマス指数（BMI）は、WHOのガイドラインに基づいて身長と体重から算出される体脂肪の標準指標です。,체질량지수(BMI)는 WHO 기준에 따라 키와 몸무게를 바탕으로 체지방을 측정하는 표준 지표입니다.,"El Índice de Masa Corporal es una medida estándar de la grasa corporal basada en la altura y el peso, calculada según las pautas de la OMS."
+nutrition.bmi.healthyWeight,,Poids santé,Normalgewicht,適正体重,정상 체중,Peso saludable
+nutrition.bmi.obese,,Obésité,Adipös,肥満,비만,Obesidad
+nutrition.bmi.overweight,,Surpoids,Übergewicht,過体重,과체중,Sobrepeso
+nutrition.bmi.target,,IMC cible : %@,Ziel-BMI: %@,目標BMI: %@,목표 BMI: %@,IMC objetivo: %@
+nutrition.bmi.underweight,,Insuffisance pondérale,Untergewicht,低体重,저체중,Bajo peso
+nutrition.bmi.whoGuideline,,Selon les directives de l'OMS,Basiert auf WHO-BMI-Richtlinien,WHOのBMIガイドラインに基づく,WHO BMI 기준 바탕,Según las pautas de IMC de la OMS
+nutrition.calculatingCalories,,Estimation des calories,Kalorien werden geschätzt,カロリーを計算中,칼로리 계산 중,Estimando calorías
+nutrition.calories,,Calories,Kalorien,カロリー,칼로리,Calorías
+nutrition.caloriesEstimated,,Calories estimées,Geschätzte Kalorien,推定カロリー,예상 칼로리,Calorías estimadas
+nutrition.caloriesPerServing,,Calories par portion,Kalorien pro Portion,1食あたりのカロリー,1회 제공량당 칼로리,Calorías por porción
+nutrition.carbs,,Glucides,Kohlenhydrate,炭水化物,탄수화물,Carbohidratos
+nutrition.eatenTitle,,Consommé,Gegessen,摂取済み,섭취함,Consumido
+nutrition.fat,,Lipides,Fette,脂質,지방,Grasas
+nutrition.goal,,Objectif :,Ziel:,目標：,목표:,Objetivo:
+nutrition.goalCalories,,Objectif : %@kcal,Ziel: %@ kcal,目標：%@kcal,목표: %@kcal,Objetivo: %@ kcal
+nutrition.goalWeight,,Poids cible : %@,Zielgewicht: %@,目標体重：%@,목표 체중: %@,Peso objetivo: %@
+nutrition.plan,,Programme,Plan,プラン,플랜,Plan
+nutrition.protein,,Protéines,Proteine,タンパク質,단백질,Proteínas
+nutrition.remaining,,Restant,Verbleibend,残り,남음,Restante
+nutrition.targetGoal,,Objectif :,Ziel:,目標：,목표:,Objetivo:
+nutrition.title,,Nutrition,Ernährung,栄養,영양,Nutrición
+nutrition.toReachGoal,,Pour atteindre votre objectif,Um das Ziel zu erreichen,目標達成まで,목표 달성까지,Para alcanzar el objetivo
+nutrition.trackerTitle,,Suivi des calories,Kalorien-Tracker,カロリートラッカー,칼로리 트래커,Contador de calorías
+nutrition.vsMacroTarget,,Par rapport à l'objectif macro,Vs. Makro-Ziel,マクロ目標との比較,영양소 목표 대비,Vs. Objetivo de macros
+onboarding.activity.high,,Activité élevée,Hohe Aktivität,高い運動量,활동량 많음,Actividad alta
+onboarding.activity.highDescription,,Activité quotidienne intense ou entraînements fréquents,Intensive tägliche Aktivität oder häufige Workouts,激しい日常運動または頻繁なトレーニング,강도 높은 일상 활동 또는 자주 하는 운동,Actividad diaria intensa o entrenamientos frecuentes
+onboarding.activity.light,,Activité légère,Leichte Aktivität,軽い運動量,활동량 약간 있음,Actividad ligera
+onboarding.activity.lightDescription,,Mouvement quotidien léger ou exercice occasionnel,Leichte tägliche Bewegung oder gelegentlicher Sport,軽い日常の動きまたは時々の運動,가벼운 일상 움직임 또는 가끔 하는 운동,Movimiento diario ligero o ejercicio ocasional
+onboarding.activity.low,,Faible activité,Niedrige Aktivität,低い運動量,활동량 적음,Poca actividad
+onboarding.activity.lowDescription,,Principalement assis avec peu de mouvement quotidien,Überwiegend sitzend mit wenig täglicher Bewegung,デスクワーク中心で運動が少ない,주로 앉아서 생활하며 일상 움직임이 적음,Principalmente sentado con poco movimiento diario
+onboarding.activity.moderate,,Activité modérée,Moderate Aktivität,適度な運動量,활동량 보통,Actividad moderada
+onboarding.activity.moderateDescription,,Activité régulière ou exercice plusieurs fois par semaine,Regelmäßige Aktivität oder Sport mehrmals die Woche,適度な運動または週に数回のトレーニング,일반적인 활동량 또는 주 2~3회 운동,Actividad regular o ejercicio varias veces por semana
+onboarding.activityLevelTitle,,Votre niveau d'activité ?,Dein Aktivitätsniveau?,普段の活動量は？,평소 활동량은 어느 정도인가요?,¿Cuál es tu nivel de actividad?
+onboarding.birthYear,,Votre année de naissance,Dein Geburtsjahr,生年月日（年）,출생 연도,Tu año de nacimiento
+onboarding.bmiAdvice.highRisk,,Cet objectif vous place dans une zone à risque élevé. Nous vous recommandons de fixer un objectif légèrement plus modéré pour votre santé.,Dieses Ziel bringt dich in einen Hochrisikobereich. Wir empfehlen ein etwas niedrigeres Ziel für deine Gesundheit.,この目標は高リスクゾーンに該当します。健康のために少し控えめな目標設定をおすすめします。,이 목표는 위험도가 높은 범위에 속합니다. 건강을 위해 조금 더 낮춘 목표를 권장합니다.,Este objetivo te sitúa en una zona de alto riesgo. Recomendamos fijar un objetivo ligeramente más moderado por tu salud.
+onboarding.bmiAdvice.low,,Un peu trop bas. Viser un poids légèrement plus élevé vous aidera à stimuler votre énergie quotidienne.,"Etwas zu niedrig. Ein leicht höheres Gewicht hilft dir, deine tägliche Energie zu steigern.",少し低すぎます。もう少し高い体重を目指すと日常のエネルギーが高まります。,조금 낮습니다. 약간 더 높은 체중을 목표로 설정하면 일상 에너지를 높이는 데 도움이 됩니다.,Un poco demasiado bajo. Apuntar a un peso ligeramente mayor te ayudará a aumentar tu energía diaria.
+onboarding.bmiAdvice.perfect,,Parfait ! Un objectif très réaliste et durable pour votre corps.,Perfekt! Ein sehr realistisches und nachhaltiges Ziel für deinen Körper.,素晴らしい！あなたの体にとても現実的で持続可能な目標です。,완벽합니다! 당신의 몸에 매우 현실적이고 지속 가능한 목표입니다.,¡Perfecto! Un objetivo muy realista y sostenible para tu cuerpo.
+onboarding.bmiAdvice.severeRiskHigh,,Avertissement : Cet objectif présente de graves risques pour la santé. Nous vous recommandons de fixer un objectif plus adapté.,Warnung: Dieses Ziel birgt schwere gesundheitliche Risiken. Wir empfehlen ein etwas niedrigeres Ziel.,警告：この目標は深刻な健康リスクを伴います。安全な目標設定をおすすめします。,경고: 이 목표는 심각한 건강 위험을 초래할 수 있습니다. 보다 안전한 목표를 설정하세요.,Advertencia: Este objetivo presenta graves riesgos para la salud. Recomendamos fijar un objetivo más moderado.
+onboarding.bmiAdvice.severeRiskLow,,Avertissement : Cet objectif est extrêmement bas. Veuillez envisager un poids plus sûr ou consulter un médecin.,Warnung: Dieses Ziel ist extrem niedrig. Bitte wähle ein sichereres Gewicht oder frage einen Arzt.,警告：この目標は極端に低いです。より安全な体重を検討するか医師にご相談ください。,경고: 이 목표는 매우 낮습니다. 보다 안전한 체중을 고려하거나 의사와 상담하세요.,"Advertencia: Este objetivo es extremadamente bajo. Por favor, considera un peso más seguro o consulta a un médico."
+onboarding.bmiAdvice.slightlyHigh,,Légèrement au-dessus de la zone santé. C'est un point de départ abordable pour progresser ensuite.,"Leicht über dem gesunden Bereich. Ein überschaubarer Startpunkt, auf den du aufbauen kannst.",適正範囲をわずかに上回っています。段階的に目指すのに良いスタート地点です。,정상 범위를 살짝 웃돏니다. 차근차근 목표에 다가가기 좋은 시작점입니다.,Ligeramente por encima de la zona saludable. Es un buen punto de partida para ir avanzando poco a poco.
+onboarding.currentWeight,,Votre poids actuel ?,Dein aktuelles Gewicht?,現在の体重は？,현재 몸무게는 얼마인가요?,¿Tu peso actual?
+onboarding.getStarted,,COMMENCER,LOSLEGEN,始める,시작하기,EMPEZAR
+onboarding.goal.gainWeight,,Prise de poids,Gewicht zunehmen,増量する,체중 증가,Ganar peso
+onboarding.goal.loseWeight,,Perte de poids,Gewicht verlieren,減量する,체중 감량,Perder peso
+onboarding.goal.maintainWeight,,Maintenir le poids,Gewicht halten,体重を維持する,체중 유지,Mantener peso
+onboarding.goalSummary.gain,,Gagner %1$@ à partir de %2$@,%1$@ zunehmen von %2$@,%2$@から%1$@増量,%2$@에서 %1$@ 증가,Ganar %1$@ desde %2$@
+onboarding.goalSummary.lose,,Perdre %1$@ à partir de %2$@,%1$@ abnehmen von %2$@,%2$@から%1$@減量,%2$@에서 %1$@ 감량,Perder %1$@ desde %2$@
+onboarding.goalSummary.maintain,,Maintenir votre poids à %@,Halte dein Gewicht bei %@,体重を%@に維持,체중을 %@로 유지,Mantener tu peso en %@
+onboarding.goalSummary.reach,,Atteindre %@,%@ erreichen,%@を目指す,%@ 달성,Alcanzar %@
+onboarding.goalTitle,,Quel est votre objectif ?,Was ist dein Ziel?,あなたの目標は？,목표가 무엇인가요?,¿Cuál es tu objetivo?
+onboarding.height,,Quelle est votre taille ?,Wie groß bist du?,身長はどのくらいですか？,키가 어떻게 되시나요?,¿Cuánto mides?
+onboarding.loading.analyzingGoals,,Analyse de vos objectifs,Ziele werden analysiert,目標を分析中,목표 분석 중,Analizando tus objetivos
+onboarding.loading.buildingMacroPlan,,Création du plan nutritionnel,Makro-Plan wird erstellt,マクロプランを作成中,영양소 플랜 작성 중,Creando plan de macros
+onboarding.loading.calculatingCalories,,Calcul des calories quotidiennes,Tageskalorien werden berechnet,1日のカロリーを計算中,일일 칼로리 계산 중,Calculando calorías diarias
+onboarding.loading.calculatingMacros,,Calcul des macronutriments,Makros werden berechnet,マクロ栄養素を計算中,영양 비율 계산 중,Calculando macros
+onboarding.loading.creatingPlan,,Création de votre programme personnalisé...,Dein personalisierter Plan wird erstellt...,カスタムプランを作成中...,맞춤형 플랜 생성 중...,Creando tu plan personalizado...
+onboarding.loading.personalizingRecommendations,,Personnalisation des recommandations,Empfehlungen werden personalisiert,おすすめをカスタマイズ中,추천 정보 맞춤화 중,Personalizando recomendaciones
+onboarding.personalSummary,,Résumé personnel,Persönliche Zusammenfassung,個人概要,개인 요약,Resumen personal
+onboarding.plan.defaultRecommendation,,"Privilégiez des repas équilibrés en protéines, glucides et lipides sains pour rester sur la bonne voie.","Konzentriere dich auf ausgewogene Mahlzeiten mit Proteinen, Kohlenhydraten und gesunden Fetten.",たんぱく質、炭水化物、良質な脂質をバランスよく摂取して目標を維持しましょう。,"단백질, 탄수화물, 건강한 지방이 균형 잡힌 식단으로 목표를 향해 나아가세요.","Enfócate en comidas balanceadas con proteínas, carbohidratos y grasas saludables para mantenerte en el camino."
+onboarding.planReady,,Votre programme personnel est prêt !,Dein persönlicher Plan ist bereit!,パーソナルプランが完成しました！,맞춤 플랜이 준비되었습니다!,¡Tu plan personal está listo!
+onboarding.slogan.achieveMore,,Obtenez plus.,Mehr erreichen.,目標をもっと高く。,더 많은 것을 달성하세요.,Logra más.
+onboarding.slogan.scanSmarter,,Scannez plus intelligemment. Atteignez vos objectifs plus vite.,Smarter scannen. Schneller Ziele erreichen.,スマートにスキャン。目標へ最短で。,스마트하게 스캔하고 더 빠르게 목표를 달성하세요.,Escanea de forma inteligente. Alcanza tus metas más rápido.
+onboarding.slogan.trackLess,,Suivez moins. ,Weniger tracken. ,記録の手間を減らす。,기록은 간편하게. ,Registra menos. 
+onboarding.startPlan,,Démarrer mon programme,Meinen Plan starten,プランを開始,내 플랜 시작하기,Iniciar mi plan
+onboarding.subtitle,,"Suivez vos repas, adoptez de meilleures habitudes et atteignez vos objectifs grâce à l'IA.","Mahlzeiten tracken, gesündere Gewohnheiten aufbauen und Ziele mit KI erreichen.",AIを活用して食事を記録し、健康的な習慣を身につけて目標を達成しましょう。,"AI와 함께 식사를 기록하고, 건강한 습관을 만들며 목표를 달성해 보세요.","Registra tus comidas, crea hábitos más saludables y alcanza tus objetivos con IA."
+onboarding.targetWeight,,Votre poids cible ?,Dein Zielgewicht?,目標の体重は？,목표 체중은 얼마인가요?,¿Tu peso objetivo?
+onboarding.tellUsAboutYou,,Parlez-nous de vous,Erzähle uns von dir,あなたについて教えてください,귀하에 대해 알려주세요,Cuéntanos sobre ti
+onboarding.title,,Suivi des calories,Kalorien-Tracker,カロリートラッカー,칼로리 트래커,Contador de calorías
+permission.camera.title,,Accès à l'appareil photo,Kamerazugriff,カメラへのアクセス,카메라 접근 권한,Acceso a la cámara
+profile.currentWeight,,Actuel : %@kg,Aktuell: %@ kg,現在：%@kg,현재: %@kg,Actual: %@ kg
+profile.gender,,Genre,Geschlecht,性別,성별,Género
+profile.gender.female,,Femme,Weiblich,女性,여성,Mujer
+profile.gender.male,,Homme,Männlich,男性,남성,Hombre
+profile.gender.nonBinary,,Non-binaire,Nicht-binär,ノンバイナリー,논바이너리,No binario
+profile.gender.other,,Autre,Divers,その他,기타,Otro
+profile.minWeight,,Poids min,Mindestgewicht,最小体重,최소 체중,Peso mín
+recipe.aiChef,,Chef IA,KI-Koch,AIシェフ,AI 셰프,Chef IA
+recipe.cookingTime,,Temps de cuisson,Kochzeit,調理時間,조리 시간,Tiempo de cocción
+recipe.cookSubtitle,,Cuisinez à votre façon pour atteindre vos objectifs !,Koche dich zu deinen Zielen!,料理を楽しみながら目標を達成しましょう！,맛있게 요리하고 목표를 달성하세요!,¡Cocina a tu manera para alcanzar tus metas!
+recipe.delete.description,,Vous ne pourrez pas récupérer cette recette.,Du wirst dieses Rezept nicht wiederherstellen können.,このレシピは復元できません。,이 레시피는 복구할 수 없습니다.,No podrás recuperar esta receta.
+recipe.delete.title,,Supprimer la recette ?,Rezept löschen?,レシピを削除しますか？,레시피를 삭제하시겠습니까?,¿Eliminar receta?
+recipe.description,,Transformez vos ingrédients disponibles en repas personnalisés adaptés à votre objectif calorique.,"Verwandle deine verfügbaren Zutaten in personalisierte Mahlzeiten, die zu deinem Kalorienziel passen.",家にある食材を使って、カロリー目標に合ったカスタムレシピを作成します。,보유한 재료로 칼로리 목표에 맞는 맞춤형 식단을 만들어 보세요.,Convierte tus ingredientes disponibles en comidas personalizadas que se adapten a tu objetivo calórico.
+recipe.detailTitle,,Détail de la recette,Rezeptdetails,レシピの詳細,레시피 상세,Detalle de la receta
+recipe.energyValue,,Valeur énergétique,Energiewert,熱量,열량,Valor energético
+recipe.error.loadFailed,,Impossible de charger cette recette. Veuillez réessayer.,Dieses Rezept konnte nicht geladen werden. Bitte versuche es erneut.,レシピを読み込めませんでした。もう一度お試しください。,레시피를 불러올 수 없습니다. 다시 시도해 주세요.,"No pudimos cargar esta receta. Por favor, inténtalo de nuevo."
+recipe.favorites.emptyDescription,,Il semble que vous n'avez encore rien ajouté à vos favoris.,"Sieht so aus, als hättest du noch keine Favoriten hinzugefügt.",お気に入りに登録されたレシピはまだありません。,아직 즐겨찾기에 추가한 항목이 없습니다.,Parece que aún no has añadido nada a tus favoritos.
+recipe.favorites.emptyTitle,,Aucun favori pour le moment,Noch keine Favoriten,お気に入りはまだありません,즐겨찾기 없음,Aún no hay favoritos
+recipe.favorites.title,,Favoris,Favoriten,お気に入り,즐겨찾기,Favoritos
+recipe.generate,,Générer la recette,Rezept generieren,レシピを生成,레시피 생성,Generar receta
+recipe.generating.gatheringIngredients,,Rassemblement de vos ingrédients...,Deine Zutaten werden gesammelt...,食材をまとめています...,재료를 모으는 중...,Reuniendo tus ingredientes...
+recipe.ingredients,,Ingrédients,Zutaten,材料,재료,Ingredientes
+recipe.ingredientsEmpty,,Aucun ingrédient ajouté pour le moment,Noch keine Zutaten hinzugefügt,まだ食材が追加されていません,아직 추가된 재료가 없습니다,Aún no se han añadido ingredientes
+recipe.instructions,,Préparation,Zubereitung,作り方,조리 방법,Preparación
+recipe.logAndSave,,Enregistrer & Sauvegarder,Aufzeichnen & Speichern,記録して保存,기록 및 저장,Registrar y guardar
+recipe.mealType,,Type de repas,Mahlzeitentyp,食事タイプ,식사 유형,Tipo de comida
+recipe.moreIdeas,,Plus d'idées avec vos ingrédients,Mehr Ideen mit deinen Zutaten,手持ちの食材で作れるその他のアイデア,해당 재료로 만들 수 있는 다른 요리,Más ideas con tus ingredientes
+recipe.searchPlaceholder,,Rechercher des recettes,Nach Rezepten suchen,レシピを検索,레시피 검색,Buscar recetas
+recipe.serving,,Portion,Portion,分量,제공량,Ración
+recipe.stepNumber,,Étape %lld,Schritt %lld,ステップ %lld,단계 %lld,Paso %lld
+recipe.tabTitle,,Recettes,Rezepte,レシピ,레시피,Recetas
+recipe.title,,Recette,Rezept,レシピ,레시피,Receta
+recipe.typeIngredientPlaceholder,,Saisissez un ingrédient...,Zutat eingeben...,材料を入力...,재료 입력...,Escribe un ingrediente...
+Select size,,Sélectionner la taille,Größe auswählen,サイズを選択,양 선택,Seleccionar tamaño
+settings.appleHealth,,Apple Santé,Apple Health,Apple ヘルスケア,Apple 건강,Salud de Apple
+settings.glassSize,,Taille du verre,Glasgröße,コップのサイズ,컵 용량,Tamaño del vaso
+settings.glassSizeDescription,,Taille de verre standard pour calculer l'apport en eau.,Standard-Glasgröße zur Berechnung der Wasseraufnahme.,水分摂取量を計算するための標準的なコップのサイズです。,수분 섭취량을 계산하기 위한 표준 컵 용량입니다.,Tamaño de vaso estándar para calcular la ingesta de agua.
+settings.language,,Langue,Sprache,言語,언어,Idioma
+settings.privacyPolicy,,Politique de confidentialité,Datenschutzrichtlinie,プライバシーポリシー,개인정보 처리방침,Política de privacidad
+settings.rateUs,,Nous noter,App bewerten,アプリを評価,앱 평가하기,Valorarnos
+settings.recalculatePlan,,Recalculer le programme,Plan neu berechnen,プランを再計算,플랜 재계산,Recalcular plan
+settings.sectionOther,,Autre,Sonstiges,その他,기타,Otros
+settings.sectionPlan,,Programme,Plan,プラン,플랜,Plan
+settings.sectionSystem,,Système,System,システム,시스템,Sistema
+settings.shareApp,,Partager l'application,App teilen,アプリを共有,앱 공유하기,Compartir aplicación
+settings.system,,Système,System,システム,システム,Sistema
+settings.title,,Réglages,Einstellungen,設定,설정,Ajustes
+settings.unit.imperial,,lbs/ft,lbs/ft,lbs/ft,lbs/ft,lbs/ft
+settings.unit.metric,,kg/cm,kg/cm,kg/cm,kg/cm,kg/cm
+settings.unitOfMeasurement,,Unités,Einheiten,単位,단위,Unidades
+settings.writeFeedback,,Rédiger un avis,Feedback schreiben,フィードバックを送信,의견 보내기,Escribir comentarios
+statistics.caloriesEaten,,Calories consommées,Konsumierte Kalorien,摂取カロリー,섭취한 칼ロ리,Calorías consumidas
+statistics.caloriesGoal,,Objectif : %@ kcal,Ziel: %@ kcal,目標：%@ kcal,목표: %@ kcal,Objetivo: %@ kcal
+statistics.noData,,Aucune donnée disponible,Keine Daten verfügbar,利用可能なデータがありません,표시할 데이터가 없습니다,No hay datos disponibles
+statistics.period.day,,Jour,Tag,日,일,Día
+statistics.period.oneMonth,,1 mois,1 Monat,1ヶ月,1개월,1 mes
+statistics.period.oneYear,,1 an,1 Jahr,1年,1년,1 año
+statistics.period.sevenDays,,7 jours,7 Tage,7日間,7일,7 días
+statistics.period.sixMonths,,6 mois,6 Monate,6ヶ月,6개월,6 meses
+statistics.title,,Statistiques,Statistiken,統計,통계,Estadísticas
+statistics.weightCurrent,,Actuel : %@ kg,Aktuell: %@ kg,現在：%@ kg,현재: %@ kg,Actual: %@ kg
+subscription.adUnlockPrompt,,"Regardez une courte publicité pour débloquer gratuitement, ou passez à Premium pour un accès illimité.","Schaue eine kurze Werbung, um es kostenlos freizuschalten, oder hole dir Premium für unbegrenzten Zugriff.",短い広告を視聴して無料で解除するか、Premiumで無制限にアクセスできます。,"짧은 광고를 시청하고 무료로 이용하거나, Premium으로 제한 없이 이용해 보세요.",Mira un anuncio corto para desbloquear gratis o obtén Premium para acceso ilimitado.
+subscription.getPremium,,Obtenir Premium,Premium holen,Premiumを取得,Premium 구매,Obtener Premium
+subscription.lifetime,,À vie,Lebenslang,生涯,평생,De por vida
+subscription.monthly,,Mensuel,Monatlich,月額,월간,Mensual
+subscription.paywall.autoRenewCancelAnytime,,Renouvellement automatique. Annulez à tout moment.,Automatische Verlängerung. Jederzeit kündbar.,自動更新。いつでもキャンセル可能。,자동 갱신. 언제든 취소 가능.,Renovación automática. Cancela en cualquier momento.
+subscription.paywall.bestOffer,,Meilleure offre,Bestes Angebot,最もお得,최고의 혜택,Mejor oferta
+subscription.paywall.popular,,Populaire,Beliebt,人気,인기,Popular
+subscription.paywall.pricePerPeriod,,Seulement %1$@/%2$@,Nur %1$@/%2$@,わずか%1$@/%2$@,단 %1$@/%2$@,Solo %1$@/%2$@
+subscription.paywall.pricePerWeek,,Seulement %@/semaine,Nur %@/Woche,わずか%@/週,주당 단 %@,Solo %@/semana
+subscription.paywall.savePercent,,Économisez %@%%,%@%% sparen,%@%%オフ,%@%% 할인,Ahorra un %@%%
+subscription.paywall.termAutoRenew,,• Votre abonnement se renouvelle automatiquement sauf si le renouvellement automatique est désactivé au moins 24 heures avant la fin de la période en cours.,"• Dein Abonnement verlängert sich automatisch, es sei denn, die automatische Verlängerung wird mindestens 24 Stunden vor dem Ende des aktuellen Zeitraums deaktiviert.",• サブスクリプションは、現在の期間が終了する少なくとも24時間前に自動更新をオフにしない限り、自動的に更新されます。,• 현재 구독 기간이 끝나기 최소 24시간 전에 자동 갱신을 해제하지 않으면 구독이 자동으로 갱신됩니다.,• Tu suscripción se renueva automáticamente a menos que se desactive la renovación automática al menos 24 horas antes del final del período actual.
+subscription.paywall.termCharge,,"• Une fois la commande confirmée, le paiement sera débité de votre compte iTunes.","• Sobald du den Kauf bestätigst, wird deine Zahlung deinem iTunes-Konto belastet.",• 購入を確定すると、iTunesアカウントに料金が請求されます。,• 구매를 확인하면 iTunes 계정으로 결제 금액이 청구됩니다.,"• Una vez confirmada la compra, el pago se cargará a tu cuenta de iTunes."
+subscription.paywall.termManage,,• L'abonnement peut être géré par l'utilisateur et le renouvellement automatique peut être désactivé dans les réglages du compte après l'achat.,"• Das Abonnement kann vom Benutzer verwaltet werden, und die automatische Verlängerung kann nach dem Kauf in den Kontoeinstellungen deaktiviert werden.",• サブスクリプションはユーザーが管理でき、購入後にアカウント設定に移動して自動更新をオフにすることができます。,"• 구독은 사용자가 관리할 수 있으며, 구매 후 계정 설정으로 이동하여 자동 갱신을 해제할 수 있습니다.",• El usuario puede gestionar la suscripción y desactivar la renovación automática accediendo a la Configuración de la cuenta tras la compra.
+subscription.paywall.termPriceWeeklyYearly,,• Le prix de l'abonnement hebdomadaire est de %1$@ et l'abonnement annuel est de %2$@ (%3$@ par semaine).,• Der Preis für das wöchentliche Abonnement beträgt %1$@ und für das jährliche Abonnement %2$@ (%3$@ pro Woche).,• 週間サブスクリプションの価格は%1$@、年間サブスクリプションは%2$@（週あたり%3$@）です。,"• 주간 구독 가격은 %1$@이며, 연간 구독 가격은 %2$@(%3$@ per week)입니다.",• El precio de la suscripción semanal es de %1$@ y la suscripción anual es de %2$@ (%3$@ por semana).
+subscription.paywall.termPriceWeeklyYearlyMonthly,,"• Le prix de l'abonnement hebdomadaire est de %1$@, l'abonnement annuel est de %2$@ (%3$@ par semaine) et l'abonnement mensuel est de %4$@.","• Der Preis für das wöchentliche Abonnement beträgt %1$@, das jährliche Abonnement %2$@ (%3$@ pro Woche) und das monatliche Abonnement %4$@.",• 週間サブスクリプションの価格は%1$@、年間サブスクリプションは%2$@（週あたり%3$@）、月間サブスクリプションは%4$@です。,"• 주간 구독 가격은 %1$@, 연간 구독 가격은 %2$@(%3$@ per week), 월간 구독 가격은 %4$@입니다.","• El precio de la suscripción semanal es de %1$@, la suscripción anual es de %2$@ (%3$@ por semana) y la suscripción mensual es de %4$@."
+subscription.paywall.termRenewal,,• Votre compte sera débité pour le renouvellement dans les 24 heures précédant la fin de la période en cours.,• Dein Konto wird innerhalb von 24 Stunden vor dem Ende des aktuellen Zeitraums für die Verlängerung belastet.,• 現在の期間が終了する24時間以内に、アカウントに更新料金が請求されます。,• 현재 구독 기간이 끝나기 24시간 이내에 갱신 비용이 계정으로 청구됩니다.,• Se cobrará la renovación en tu cuenta dentro de las 24 horas anteriores al final del período actual.
+subscription.period.lifeTime,,à vie,lebenslang,一生涯,평생,de por vida
+subscription.period.month,,mois,Monat,月,월,mes
+subscription.period.week,,semaine,Woche,週,주,semana
+subscription.period.year,,an,Jahr,年,년,año
+subscription.perWeek,,Par semaine,Pro Woche,1週間あたり,주당,Por semana
+subscription.privacyPolicy,,Politique de confidentialité,Datenschutzrichtlinie,プライバシーポリシー,개인정보 처리방침,Política de privacidad
+subscription.restorePurchase,,Restaurer,Wiederherstellen,復元,구매 복원,Restaurar
+subscription.terms,,Conditions d'abonnement,Abonnementbedingungen,定期購読規約,구독 약관,Términos de suscripción
+subscription.termsOfUse,,Conditions d'utilisation,Nutzungsbedingungen,利用規約,이용 약관,Términos de uso
+subscription.unlockFeature,,Débloquer cette fonctionnalité,Funktion freischalten,この機能を解除,이 기능 잠금 해제,Desbloquear esta función
+subscription.watchAd,,Regarder une publicité,Werbung ansehen,広告を視聴,광고 시청,Ver anuncio
+subscription.weekly,,Hebdomadaire,Wöchentlich,週額,주간,Semanal
+subscription.yearly,,Annuel,Jährlich,年額,연간,Anual
+tab.add,,Ajouter,Hinzufügen,追加,추가,Añadir
+tab.recipe,,Recettes,Rezepte,レシピ,레시피,Recetas
+tab.tracking,,Suivi,Tracking,記録,기록,Seguimiento
+toast.activity.logFailed,,Échec de l'enregistrement de l'activité,Aktivität konnte nicht aufgezeichnet werden,アクティビティの記録に失敗しました,활동 기록에 실패했습니다,Error al registrar la actividad
+toast.activity.logSuccess,,Activité enregistrée avec succès,Aktivität erfolgreich aufgezeichnet,アクティビティを記録しました,활동이 성공적으로 기록되었습니다,Actividad registrada con éxito
+toast.aiChef.ingredientNotFound,,Impossible de trouver ces ingrédients.,Diese Zutaten konnten nicht gefunden werden.,これらの食材が見つかりませんでした。,해당 재료를 찾을 수 없습니다.,No se pudieron encontrar estos ingredientes.
+toast.aiChef.recipeGenerateFailed,,Nous n'avons pas pu générer vos recettes. Veuillez réessayer.,Rezepte konnten nicht generiert werden. Bitte versuche es erneut.,レシピを生成できませんでした。もう一度お試しください。,레시피를 생성할 수 없습니다. 다시 시도해 주세요.,"No pudimos generar tus recetas. Por favor, inténtalo de nuevo."
+toast.common.networkError,,Erreur de connexion réseau. Veuillez réessayer.,Netzwerkfehler. Bitte versuche es erneut.,ネットワーク接続エラー。もう一度お試しください。,네트워크 연결 오류입니다. 다시 시도해 주세요.,"Error de conexión de red. Por favor, inténtalo de nuevo."
+toast.common.somethingWrongPleaseTryAgain,,Un problème est survenu. Veuillez réessayer.,Etwas ist schiefgelaufen. Bitte versuche es erneut.,エラーが発生しました。もう一度お試しください。,문제가 발생했습니다. 다시 시도해 주세요.,"Algo salió mal. Por favor, inténtalo de nouveau."
+toast.favourite.updateFailed,,Échec de la mise à jour des favoris,Favoriten konnten nicht aktualisiert werden,お気に入りの更新に失敗しました,즐겨찾기 업데이트 실패,Error al actualizar favoritos
+toast.meal.logFailed,,Échec de l'enregistrement du repas,Mahlzeit konnte nicht aufgezeichnet werden,食事の記録に失敗しました,식사 기록에 실패했습니다,Error al registrar la comida
+toast.meal.logSuccess,,Repas enregistré avec succès,Mahlzeit erfolgreich aufgezeichnet,食事を記録しました,식사가 성공적으로 기록되었습니다,Comida registrada con éxito
+toast.tracking.logSuccessNamed,,Enregistrement réussi de %1$@,%1$@ erfolgreich aufgezeichnet,%1$@を記録しました,%1$@ 성공적으로 기록됨,%1$@ registrado con éxito
+toast.water.logFailed,,Échec de l'enregistrement de l'eau,Wasseraufnahme konnte nicht aufgezeichnet werden,水分摂取の記録に失敗しました,수분 기록에 실패했습니다,Error al registrar agua
+toast.water.logSuccess,,Eau enregistrée avec succès,Wasseraufnahme erfolgreich aufgezeichnet,水分摂取を記録しました,수분이 성공적으로 기록되었습니다,Agua registrada con éxito
+toast.weight.logFailed,,Échec de l'enregistrement du poids,Gewicht konnte nicht aufgezeichnet werden,体重の記録に失敗しました,체중 기록에 실패했습니다,Error al registrar peso
+toast.weight.logSuccess,,Poids enregistré avec succès,Gewicht erfolgreich aufgezeichnet,体重を記録しました,체중이 성공적으로 기록되었습니다,Peso registrado con éxito
+water.glassCount,,Nombre de verres,Anzahl der Gläser,コップの数,컵 수,Número de vasos
+water.glassCount,plural.one,%lld verre,%lld Glas,%lld杯,%lld잔,%lld vaso
+water.glassCount,plural.other,%lld verres,%lld Gläser,%lld杯,%lld잔,%lld vasos
+water.glassSize,,Taille du verre,Glasgröße,コップのサイズ,컵 용量,Tamaño del vaso
+water.glassSizeDescription,,Définissez la quantité d'eau par verre lors de l'enregistrement,Stelle die Wassermenge pro Glas für die Aufzeichnung ein,記録時のコップ1杯あたりの水量を設定,기록 시 컵 1잔당 수분 양 설정,Ajusta la cantidad de agua por vaso al registrar
+water.intake,,Consommation d'eau,Wasseraufnahme,水分摂取量,수분 섭취량,Ingesta de agua
+water.log,,Enregistrer la consommation d'eau,Wasser aufzeichnen,水分を記録,수분 기록,Registrar agua
+water.title,,Eau,Wasser,水,수분,Agua
+weight.goalWeight,,Poids cible : %@,Zielgewicht: %@,目標体重：%@,목표 체중: %@,Peso objetivo: %@
+weight.log,,Enregistrer le poids,Gewicht aufzeichnen,体重を記録,체중 기록,Registrar peso
+weight.title,,Poids,Gewicht,体重,체중,Peso

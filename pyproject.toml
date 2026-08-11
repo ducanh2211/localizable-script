@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "xcstrings-tool"
+version = "1.0.0"
+description = "Công cụ tối ưu quy trình Localization cho Xcode String Catalog (.xcstrings)"
+readme = "README.md"
+requires-python = ">=3.8"
+authors = [
+    { name = "Amobear Team" }
+]
+dependencies = [
+    "streamlit>=1.35.0",
+]
+
+[project.scripts]
+xcstrings = "xcstrings_tool.cli.main:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
