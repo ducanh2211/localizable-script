@@ -95,7 +95,6 @@ localizable-script/
 │       └── ui/                     # Streamlit Web App & Components
 ├── tests/                          # Bộ Unit Tests tự động
 ├── legacy/                         # Chứa các script nguyên bản ban đầu
-├── localizble/                     # Dữ liệu mẫu thực tế
 ├── app.py                          # Shortcut chạy Web Dashboard
 ├── pyproject.toml                  # Cấu hình chuẩn Python Package
 ├── requirements.txt                # Thư viện phụ thuộc (streamlit)
